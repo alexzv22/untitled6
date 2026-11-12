@@ -1,0 +1,95 @@
+/* ===== Лабораторная работа 2. Введение в CSS ===== */
+
+/* Фон страницы + базовый шрифт и межстрочный интервал (из лекции) */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    /* Домашнее задание: фоновое изображение на главной странице */
+    background-image: url("Image/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Стилизация заголовков (группировка селекторов) */
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+/* Домашнее задание: заголовок с тенью */
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Стилизация абзацев */
+p {
+    color: #555;
+    padding: 10px;
+}
+
+/* Цвет и фон секций, чтобы текст читался поверх фоновой картинки */
+main, header, footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+/* Навигация (вложенный селектор) */
+nav a {
+    color: green;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Домашнее задание: скруглённые углы у всех картинок */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Стилизация формы */
+form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 6px;
+}
+
+/* Стилизация кнопки + псевдокласс :hover (из лекции) */
+button,
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    color: #777;
+    text-align: center;
+    margin-top: 40px;
+}

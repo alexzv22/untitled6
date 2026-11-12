@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обо мне</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <nav>
+        <a href="index.html">Обо мне</a>
+        <a href="projects.html">Мои проекты</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Обо мне</h1>
+    <p>Меня зовут Александр, и я начинающий веб-разработчик.
+        Мне нравится изучать HTML, CSS и JavaScript.</p>
+
+    <h2>Мои интересы</h2>
+    <ul>
+        <li>Игры</li>
+        <li>Программирование</li>
+        <li>Путешествия</li>
+    </ul>
+
+    <img src="Image/my-photo.jpg" alt="Фотография Александр" width="200">
+
+    <h2>Связаться со мной</h2>
+    <form action="/send-message.php" method="post">
+        <label>Имя: <input type="text" name="name" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Сообщение: <textarea name="message" rows="5"></textarea></label><br>
+        <input type="submit" value="Отправить">
+    </form>
+
+    <!-- Лабораторная работа 3. JavaScript -->
+    <section id="practice">
+        <h2>Практическая работа 3 (JavaScript)</h2>
+
+        <!-- Задача 2: кнопка с уникальным id -->
+        <button id="myBtn">Нажми меня</button>
+
+        <!-- Домашнее задание: счётчик кликов -->
+        <button id="counterBtn">Счётчик кликов</button>
+        <p>Кликов: <span id="counterValue">0</span></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Александр</p>
+</footer>
+
+<!-- Подключаем скрипт перед закрывающим тегом </body> -->
+<script src="script.js"></script>
+</body>
+</html>
